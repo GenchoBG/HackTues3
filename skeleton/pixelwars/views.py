@@ -58,8 +58,12 @@ def index(request):
     return render(request, 'pixelwars/index.html', {'players': Player.objects.order_by('-wins')[:10]})
 
 
-def tourney(request):
-    return render(request, 'pixelwars/tourney/index.html')
+def tourneyindex(request):
+    tourneys = Tourney.objects.all()
+    context = {
+        'tourneys' : tourneys
+    }
+    return render(request, 'pixelwars/tourney/index.html', context)
 
 
 def createGame(request):
@@ -125,10 +129,10 @@ def leaveGame(request, id):
 
 
 def draw(request, id):
-    player = Player.objects.get(user=request.user)
-    player.hasDrawed = True
-    player.save()
-    return HttpResponseRedirect('/pixelwars/standart/' + id + "/")
+    #player = Player.objects.get(user=request.user)
+    #player.hasDrawed = True
+    #player.save()
+    return render(request, 'pixelwars/standart/draw.html')
 
 
 def judge(request, id):

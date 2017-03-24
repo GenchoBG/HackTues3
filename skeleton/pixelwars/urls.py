@@ -14,7 +14,7 @@ urlpatterns = [
     url(r'standart/(?P<id>\d+)/$', views.readstandart, name='readstandart'),
 
     #/pixelwars/tourney/
-    url(r'tourney/$', views.tourney, name="tourney"),
+    url(r'tourney/$', views.tourneyindex, name="tourneyindex"),
 
     #TODO:
     #/pixelwars/tourney/<id>/

@@ -1,5 +1,5 @@
 from django.db import models
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User, AbstractUser
 # Create your models here.
 
 class Game(models.Model):
@@ -20,3 +20,6 @@ class Player(models.Model):
 
 class Tourney(models.Model):
     name = models.CharField(max_length=250, null=1)
+
+class MyUser(AbstractUser):
+    picture = models.CharField(max_length=3000, null=1)
