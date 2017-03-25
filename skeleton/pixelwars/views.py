@@ -14,8 +14,9 @@ from django.contrib.auth import authenticate, login, logout
 # Create your views here.
 
 def standart(request):
-    games = Game.objects.filter(active=True)
-    context = {'games': games, 'judgable': games.filter(judgeable=True)}
+    judgeGames = Game.objects.filter(active=True).filter(judgable=True).all()
+    games = Game.objects.filter(active=True).filter(judgable=False).all()
+    context = {'games': games, 'judgeGames' : judgeGames}
     return render(request, 'pixelwars/standart/index.html', context)
 
 
@@ -46,6 +47,7 @@ def readstandart(request, id):
         canPlay = True
     if (not currentPlayer in players and notActiveGameOrNoGame(currentPlayer)):
         canJoin = True
+
     context = {
         'canJoin': canJoin,
         'canPlay': canPlay,
@@ -149,7 +151,7 @@ def submitDrawing(request, id):
 
     if (game.player1 and game.player1.user == request.user):
         player = game.player1
-    if (game.player2.user == request.user):
+    if (game.player2 and game.player2.user == request.user):
         player = game.player2
 
     player.hasDrawed = True
@@ -157,10 +159,21 @@ def submitDrawing(request, id):
 
     if (game.player1 and game.player1.user == request.user):
         game.drawing1 = drawing
-    if (game.player2.user == request.user):
+    if (game.player2 and game.player2.user == request.user):
         game.drawing2 = drawing
 
     player.save()
+
+
+    if(game.player1 and game.player1.hasDrawed and game.player2 and game.player2.hasDrawed):
+        player1 = game.player1
+        player1.hasDrawed = False
+        player1.save()
+        player2 = game.player2
+        player2.hasDrawed = False
+        player2.save()
+        game.judgable = True
+
     game.save()
 
     return JsonResponse({"url": '/pixelwars/standart/' + id + "/"})
@@ -192,9 +205,13 @@ def viewUser(request, id):
 def vote1(request, id):
     game = Game.objects.get(id=id)
     player = game.player1
-    player.wins += 1
+    player.wins += 2
     player.hasDrawed = False
     player.save()
+    otherPlayer = game.player2
+    otherPlayer.wins -= 1
+    otherPlayer.hasDrawed = False
+    otherPlayer.save()
     game.active = False
     game.save()
     return HttpResponseRedirect('/')
@@ -203,9 +220,15 @@ def vote1(request, id):
 def vote2(request, id):
     game = Game.objects.get(id=id)
     player = game.player2
-    player.wins += 1
+    player.wins += 2
     player.hasDrawed = False
     player.save()
+    otherPlayer = game.player1
+    otherPlayer.wins -= 1
+    otherPlayer.hasDrawed = False
+    otherPlayer.save()
     game.active = False
     game.save()
     return HttpResponseRedirect('/')
+
+#LIST judge views

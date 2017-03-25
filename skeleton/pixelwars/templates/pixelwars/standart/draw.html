@@ -30,7 +30,6 @@
         <form style="z-index: 999; cursor: pointer" action="/pixelwars/standart/{{ gameId }}/draw/submit/" method="post" id="myForm">
             <input type="submit" class="btn btn-success" data-id="svn-btn" value="Save">
             {% csrf_token %}
-
         </form>
     </div>
     <script src="{% static 'pixelwars/canvasshit/game.js' %}"></script>

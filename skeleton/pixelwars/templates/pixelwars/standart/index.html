@@ -17,11 +17,19 @@
                 New Game
             </button>
         </form>
-        <ul>
-            {% for game in judgable %}
-                <li><a href="{% url 'pixelwars:judge' game.id %}">{{ game.theme }}</a></li>
-            {% endfor %}
-        </ul>
-
+        <div>
+            {% if judgeGames.filter %}
+                Judge:
+                {% else %}
+                No games to judge :(
+                {% endif %}
+            <ul>
+                {% for game in judgeGames %}
+                    {% if game.player1.user != user and game.player2.user != user %}
+                    <li><a href="{% url 'pixelwars:judge' game.id %}">{{ game.theme }}</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
     </div>
 {% endblock %}

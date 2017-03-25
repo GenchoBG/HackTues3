@@ -7118,3 +7118,13 @@ body{
   pointer-events: none;
   z-index: 1;
 }
+
+.img {
+    width: 450px;
+    height: 450px;
+}
+
+#vs{
+    margin-top: 190px;
+    height: 20px;
+}
