@@ -1,4 +1,18 @@
 {% extends 'pixelwars/base.html' %}
 {% block main %}
-
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <img border="3px solid black" class="img" src="{{ drawing1 }}">
+                <a href="{% url 'pixelwars:vote1' game.id %}" class="btn btn-success">Better</a>
+            </div>
+            <div class="col-md-1">
+                <center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VS</center>
+            </div>
+            <div class="col-md-5">
+                <img border="3px solid black" class="img" src="{{ drawing2 }}">
+                <a href="{% url 'pixelwars:vote2' game.id %}" class="btn btn-success pull-right">Better</a>
+            </div>
+        </div>
+    </div>
 {% endblock %}

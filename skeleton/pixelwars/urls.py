@@ -49,5 +49,11 @@ urlpatterns = [
 
     # /pixelwars/standart/<id>/judge/
     url(r'standart/(?P<id>\d+)/judge/$', views.judge, name='judge'),
+
+    # /pixelwars/standart/<id>/judge/1/
+    url(r'standart/(?P<id>\d+)/judge/1/', views.vote1, name='vote1'),
+
+    # /pixelwars/standart/<id>/judge/2/
+    url(r'standart/(?P<id>\d+)/judge/2/', views.vote2, name='vote2'),
     ]
 

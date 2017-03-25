@@ -1,0 +1,40 @@
+
+
+#canvas-id {
+    margin: 0;
+    padding: 0;
+    cursor: crosshair;
+    size: 5px;
+}
+
+#color_bl {
+    background-color: black;
+}
+
+#color_rd {
+    background-color: red;
+}
+
+#color_blue {
+    background-color: blue;
+}
+
+#eraser {
+    background-color: white;
+}
+
+#color_pink {
+    background-color: deeppink;
+}
+#color_purp{
+    background-color: purple;
+}
+#color_green{
+    background-color: green;
+}
+#color_yell{
+    background-color: yellow;
+}
+#color_br{
+    background-color: saddlebrown;
+}

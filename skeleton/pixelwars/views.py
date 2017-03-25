@@ -15,21 +15,23 @@ from django.contrib.auth import authenticate, login, logout
 
 def standart(request):
     games = Game.objects.filter(active=True)
-    context = {'games': games, 'judgable' : games.filter(judgeable=True)}
+    context = {'games': games, 'judgable': games.filter(judgeable=True)}
     return render(request, 'pixelwars/standart/index.html', context)
 
+
 def notActiveGameOrNoGame(player):
-    games = Game.objects.filter(Q(player1 = player) | Q(player2 = player))
+    games = Game.objects.filter(Q(player1=player) | Q(player2=player))
     for game in games:
         if game.active:
             return False
 
     return True
 
+
 def readstandart(request, id):
     game = get_object_or_404(Game, id=id)
     players = []
-    if(game.player1 != None):
+    if (game.player1 != None):
         players.append(game.player1)
     if (game.player2 != None):
         players.append(game.player2)
@@ -37,10 +39,10 @@ def readstandart(request, id):
     canJoin = False
     canLeave = False
     currentPlayer = Player.objects.get(user=request.user)
-    if(currentPlayer in players):
+    if (currentPlayer in players):
         canLeave = True
     playerCount = len(players)
-    if(currentPlayer in players and not currentPlayer.hasDrawed):
+    if (currentPlayer in players and not currentPlayer.hasDrawed):
         canPlay = True
     if (not currentPlayer in players and notActiveGameOrNoGame(currentPlayer)):
         canJoin = True
@@ -48,8 +50,8 @@ def readstandart(request, id):
         'canJoin': canJoin,
         'canPlay': canPlay,
         'currentPlayer': currentPlayer,
-        'playerCount' : playerCount,
-        'canLeave' : canLeave,
+        'playerCount': playerCount,
+        'canLeave': canLeave,
         'players': players,
         'game': game,
     }
@@ -108,7 +110,10 @@ def logOut(request):
 def joinGame(request, id):
     player = Player.objects.get(user=request.user)
     game = Game.objects.get(id=id)
-    game.player2 = player
+    if not game.player2:
+        game.player2 = player
+    else:
+        game.player1 = player
     game.save()
     url = '/pixelwars/standart/' + id + '/'
     return HttpResponseRedirect(url)
@@ -116,10 +121,16 @@ def joinGame(request, id):
 
 def leaveGame(request, id):
     game = Game.objects.get(id=id)
-    if(game.player1.user==request.user):
-        game.player1=None
-    if(game.player2.user==request.user):
-        game.player2=None
+    if (game.player1 and game.player1.user == request.user):
+        player = game.player1
+        player.hasDrawed = False
+        player.save()
+        game.player1 = None
+    if (game.player2 and game.player2.user == request.user):
+        player = game.player2
+        player.hasDrawed = False
+        player.save()
+        game.player2 = None
     game.save()
     url = '/pixelwars/standart/' + id + '/'
     return HttpResponseRedirect(url)
@@ -130,14 +141,15 @@ def draw(request, id):
     context["gameId"] = id
     return render(request, 'pixelwars/standart/draw.html', context)
 
+
 @csrf_exempt
 def submitDrawing(request, id):
     game = Game.objects.get(id=id)
     player = None
 
-    if(game.player1 and game.player1.user == request.user):
+    if (game.player1 and game.player1.user == request.user):
         player = game.player1
-    if(game.player2.user == request.user):
+    if (game.player2.user == request.user):
         player = game.player2
 
     player.hasDrawed = True
@@ -151,19 +163,17 @@ def submitDrawing(request, id):
     player.save()
     game.save()
 
-    return JsonResponse({"url" : '/pixelwars/standart/' + id + "/"})
+    return JsonResponse({"url": '/pixelwars/standart/' + id + "/"})
 
 
 def judge(request, id):
     game = Game.objects.get(id=id)
-    drawing1 = game.drawing1
-    drawing2 = game.drawing2
     context = {
-        'game' : game,
-        'drawing1' : drawing1,
-        'drawing2' : drawing2,
-        'player1' : game.player1,
-        'player2' : game.player2,
+        'game': game,
+        'drawing1': game.drawing1,
+        'drawing2': game.drawing2,
+        'player1': game.player1,
+        'player2': game.player2,
     }
     return render(request, 'pixelwars/standart/judge.html', context)
 
@@ -178,3 +188,24 @@ def viewUser(request, id):
     }
     return render(request, 'pixelwars/user/readprofile.html', context)
 
+
+def vote1(request, id):
+    game = Game.objects.get(id=id)
+    player = game.player1
+    player.wins += 1
+    player.hasDrawed = False
+    player.save()
+    game.active = False
+    game.save()
+    return HttpResponseRedirect('/')
+
+
+def vote2(request, id):
+    game = Game.objects.get(id=id)
+    player = game.player2
+    player.wins += 1
+    player.hasDrawed = False
+    player.save()
+    game.active = False
+    game.save()
+    return HttpResponseRedirect('/')

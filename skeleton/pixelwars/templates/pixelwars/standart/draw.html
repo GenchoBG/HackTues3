@@ -1,6 +1,8 @@
 {% extends 'pixelwars/base.html' %}
 {% load staticfiles %}
 {% block canvas %}
+    <link rel="stylesheet" href="{% static 'pixelwars/canvasshit/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'pixelwars/canvasshit/canvasstyle.css' %}">
     <script src="{% static 'pixelwars/js/jquery.min.js' %}"></script>
     <script src="{% static 'pixelwars/canvasshit/bootstrap.min.js' %}"></script>
 {% endblock %}
@@ -10,14 +12,18 @@
         <div class="container" onmousedown="WhichButton(event)">
             <div class="container" onmousedown="WhichButton(event)">
                 <div>
-                    <button class="btn btn-default" id="eraser" value="white"></button>
-                    <button class="btn btn-default" id="color_bl" value="black"></button>
-                    <button class="btn btn-default" id="color_rd" value="red"></button>
-                    <button class="btn btn-default" id="color_blue" value="blue"></button>
-                    <button class="btn btn-default" id="color_pink" value="deeppink"></button>
-                    <input type="color" id="myColor">
-                    <button class="btn btn-default" id="colorPicker">Select Custom Color</button>
-                </div>
+            <button class="btn btn-default" id="eraser" value="white"></button>
+            <button class="btn btn-default" id="color_bl" value="black"></button>
+            <button class="btn btn-default" id="color_rd" value="red"></button>
+            <button class="btn btn-default" id="color_blue" value="blue"></button>
+            <button class="btn btn-default" id="color_pink" value="deeppink"></button>
+            <button class="btn btn-default" id="color_purp" value="purple"></button>
+            <button class="btn btn-default" id="color_green" value="green"></button>
+            <button class="btn btn-default" id="color_yell" value="yellow"></button>
+            <button class="btn btn-default" id="color_br" value="saddlebrown"></button>
+            <input type="color" id="myColor">
+            <button class="btn btn-default" id="colorPicker">Click me</button>
+        </div>
                 <canvas id="canvas-id"></canvas>
             </div>
         </div>
