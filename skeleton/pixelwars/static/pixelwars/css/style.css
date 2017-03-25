@@ -7113,3 +7113,8 @@ div.tab button.active {
 body{
     background-image: url("../images/bg.jpg");
 }
+
+.necukaem{
+  pointer-events: none;
+  z-index: 1;
+}

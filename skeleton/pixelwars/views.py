@@ -132,7 +132,10 @@ def draw(request, id):
 def submitDrawing(request, id):
     player = Player.objects.get(user=request.user)
     player.hasDrawed = True
-    # player.drawing = drawing
+
+    drawing = request.POST.get('drawing', 0)
+    player.d
+
     player.save()
     return HttpResponseRedirect('/pixelwars/standart/' + id + "/")
 
@@ -150,3 +153,4 @@ def viewUser(request, id):
         'datejoined': user.date_joined,
     }
     return render(request, 'pixelwars/user/readprofile.html', context)
+

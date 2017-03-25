@@ -1,12 +1,8 @@
 {% extends 'pixelwars/base.html' %}
 {% load staticfiles %}
 {% block canvas %}
-    <link rel="stylesheet" href="{% static 'pixelwars/canvasshit/styles.css' %}">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="{% static 'pixelwars/js/jquery.min.js' %}"></script>
     <script src="{% static 'pixelwars/canvasshit/bootstrap.min.js' %}"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
 {% endblock %}
 
 {% block main %}
@@ -21,11 +17,17 @@
                     <button class="btn btn-default" id="color_rd" value="red"></button>
                     <button class="btn btn-default" id="color_blue" value="blue"></button>
                     <button class="btn btn-default" id="color_pink" value="deeppink"></button>
+                    <input type="color" id="myColor">
+                    <button class="btn btn-default" id="colorPicker">Click me</button>
                 </div>
                 <canvas id="canvas-id"></canvas>
             </div>
         </div>
-        <a href="/pixelwars/standart/{{ gameId }}/draw/submit">Draw</a>
+        <form style="z-index: 999; cursor: pointer" action="/pixelwars/standart/{{ gameId }}/draw/submit/"
+              method="post">
+            <input type="submit" class="btn btn-success" value="Save">
+        </form>
+
     </div>
     <script src="{% static 'pixelwars/canvasshit/game.js' %}"></script>
 {% endblock %}
