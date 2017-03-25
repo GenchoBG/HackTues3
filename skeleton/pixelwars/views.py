@@ -1,5 +1,7 @@
 from django.views import generic
 from django.http import HttpResponseRedirect
+from django.views.decorators.csrf import csrf_exempt
+
 from .models import Game, Player, Tourney
 from django.contrib.auth.models import User
 from django.shortcuts import render, redirect
@@ -128,15 +130,17 @@ def draw(request, id):
     context["gameId"] = id
     return render(request, 'pixelwars/standart/draw.html', context)
 
-
+@csrf_exempt
 def submitDrawing(request, id):
     player = Player.objects.get(user=request.user)
+    game = Game.objects.get(id=id)
     player.hasDrawed = True
 
     drawing = request.POST.get('drawing', 0)
-    player.d
-
+    print(drawing)
+    player.drawing = drawing
     player.save()
+
     return HttpResponseRedirect('/pixelwars/standart/' + id + "/")
 
 

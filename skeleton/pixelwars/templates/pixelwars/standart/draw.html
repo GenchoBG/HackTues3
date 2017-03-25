@@ -7,27 +7,25 @@
 
 {% block main %}
     <div class="container">
-        <div>CANVAS</div>
         <div class="container" onmousedown="WhichButton(event)">
             <div class="container" onmousedown="WhichButton(event)">
                 <div>
-                    <button class="btn btn-default" id="eraser" value="white"><span class="glyphicon glyphicon-erase"
-                                                                                    aria-hidden="true"></span></button>
+                    <button class="btn btn-default" id="eraser" value="white"></button>
                     <button class="btn btn-default" id="color_bl" value="black"></button>
                     <button class="btn btn-default" id="color_rd" value="red"></button>
                     <button class="btn btn-default" id="color_blue" value="blue"></button>
                     <button class="btn btn-default" id="color_pink" value="deeppink"></button>
                     <input type="color" id="myColor">
-                    <button class="btn btn-default" id="colorPicker">Click me</button>
+                    <button class="btn btn-default" id="colorPicker">Select Custom Color</button>
                 </div>
                 <canvas id="canvas-id"></canvas>
             </div>
         </div>
-        <form style="z-index: 999; cursor: pointer" action="/pixelwars/standart/{{ gameId }}/draw/submit/"
-              method="post">
-            <input type="submit" class="btn btn-success" value="Save">
-        </form>
+        <form style="z-index: 999; cursor: pointer" action="/pixelwars/standart/{{ gameId }}/draw/submit/" method="post" id="myForm">
+            <input type="submit" class="btn btn-success" data-id="svn-btn" value="Save">
+            {% csrf_token %}
 
+        </form>
     </div>
     <script src="{% static 'pixelwars/canvasshit/game.js' %}"></script>
 {% endblock %}

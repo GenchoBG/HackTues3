@@ -29,11 +29,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pixelwars/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+            <state relative-caret-position="493">
+              <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -41,21 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pixelwars/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="46" column="43" lean-forward="true" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pixelwars/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="96" column="0" lean-forward="true" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+            <state relative-caret-position="157">
+              <caret line="138" column="39" lean-forward="false" selection-start-line="138" selection-start-column="32" selection-end-line="138" selection-end-column="39" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -63,13 +53,45 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/skeleton/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="50" column="1" lean-forward="false" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pixelwars/tests.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="draw.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pixelwars/templates/pixelwars/standart/draw.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="22" column="48" lean-forward="false" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
+            <state relative-caret-position="166">
+              <caret line="25" column="12" lean-forward="true" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="28" />
               <folding>
-                <element signature="e#1335#1372#0#HTML" expanded="true" />
+                <element signature="e#1170#1207#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pixelwars/templates/pixelwars/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="61" column="56" lean-forward="false" selection-start-line="61" selection-start-column="56" selection-end-line="61" selection-end-column="56" />
+              <folding>
+                <element signature="e#843#981#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -78,58 +100,28 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pixelwars/templates/pixelwars/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="73" lean-forward="true" selection-start-line="6" selection-start-column="73" selection-end-line="6" selection-end-column="73" />
+            <state relative-caret-position="81">
+              <caret line="37" column="18" lean-forward="true" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jquery.min.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pixelwars/static/pixelwars/js/jquery.min.js">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pixelwars/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="7" column="1002" lean-forward="false" selection-start-line="7" selection-start-column="1002" selection-end-line="7" selection-end-column="1002" />
+            <state relative-caret-position="276">
+              <caret line="50" column="65" lean-forward="false" selection-start-line="50" selection-start-column="65" selection-end-line="50" selection-end-column="65" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jquery-1.10.2.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pixelwars/static/pixelwars/js/jquery-1.10.2.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="game.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="game.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pixelwars/static/pixelwars/canvasshit/game.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="107" column="65" lean-forward="true" selection-start-line="107" selection-start-column="65" selection-end-line="107" selection-end-column="65" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pixelwars/static/pixelwars/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="7118" column="13" lean-forward="false" selection-start-line="7118" selection-start-column="13" selection-end-line="7118" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="read.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pixelwars/templates/pixelwars/standart/read.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-175">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="35" />
+            <state relative-caret-position="298">
+              <caret line="65" column="57" lean-forward="false" selection-start-line="65" selection-start-column="57" selection-end-line="65" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -154,6 +146,7 @@
       <find>tabconte</find>
       <find>toppla</find>
       <find>02</find>
+      <find>[</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -172,19 +165,20 @@
         <option value="$PROJECT_DIR$/pixelwars/templates/pixelwars/standart/index.html" />
         <option value="$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/django/contrib/auth/models.py" />
         <option value="$PROJECT_DIR$/pixelwars/static/pixelwars/js/profile.js" />
-        <option value="$PROJECT_DIR$/pixelwars/templates/pixelwars/index.html" />
         <option value="$PROJECT_DIR$/pixelwars/templates/pixelwars/user/readprofile.html" />
         <option value="$PROJECT_DIR$/pixelwars/templates/pixelwars/standart/read.html" />
-        <option value="$PROJECT_DIR$/pixelwars/urls.py" />
         <option value="$PROJECT_DIR$/pixelwars/static/pixelwars/canvasshit/style.css" />
         <option value="$PROJECT_DIR$/pixelwars/static/pixelwars/canvasshit/styles.css" />
-        <option value="$PROJECT_DIR$/pixelwars/views.py" />
-        <option value="$PROJECT_DIR$/pixelwars/models.py" />
         <option value="$PROJECT_DIR$/pixelwars/static/pixelwars/js/jquery.min.js" />
         <option value="$PROJECT_DIR$/pixelwars/templates/pixelwars/base.html" />
         <option value="$PROJECT_DIR$/pixelwars/static/pixelwars/css/style.css" />
+        <option value="$PROJECT_DIR$/pixelwars/static/pixelwars/js/homepage.js" />
+        <option value="$PROJECT_DIR$/pixelwars/templates/pixelwars/index.html" />
+        <option value="$PROJECT_DIR$/pixelwars/urls.py" />
         <option value="$PROJECT_DIR$/pixelwars/templates/pixelwars/standart/draw.html" />
+        <option value="$PROJECT_DIR$/pixelwars/views.py" />
         <option value="$PROJECT_DIR$/pixelwars/static/pixelwars/canvasshit/game.js" />
+        <option value="$PROJECT_DIR$/pixelwars/models.py" />
       </list>
     </option>
   </component>
@@ -353,132 +347,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="standart" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="skeleton" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="skeleton" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pixelwars" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pixelwars" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="skeleton" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="skeleton" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pixelwars" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pixelwars" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="skeleton" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="skeleton" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pixelwars" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pixelwars" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="skeleton" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="skeleton" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pixelwars" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pixelwars" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="skeleton" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="skeleton" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pixelwars" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pixelwars" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="canvasshit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -794,13 +662,13 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19894099" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19894099" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290469" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33551556" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33551556" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36988544" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -940,13 +808,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pixelwars/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pixelwars/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1004,37 +865,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/skeleton/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="32" column="1" lean-forward="false" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
-          <folding>
-            <element signature="e#642#683#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skeleton/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1042">
-          <caret line="123" column="14" lean-forward="false" selection-start-line="123" selection-start-column="14" selection-end-line="123" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pixelwars/forms.py" />
     <entry file="file://$PROJECT_DIR$/pixelwars/static/pixelwars/js/profile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pixelwars/static/pixelwars/js/homepage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="42" lean-forward="false" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
           <folding />
         </state>
       </provider>
@@ -1046,14 +881,6 @@
           <folding>
             <element signature="n#!!doc" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pixelwars/templates/pixelwars/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="99" lean-forward="false" selection-start-line="16" selection-start-column="84" selection-end-line="16" selection-end-column="99" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1097,24 +924,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pixelwars/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="46" column="43" lean-forward="true" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pixelwars/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pixelwars/static/pixelwars/js/jquery.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1139,24 +948,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pixelwars/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="96" column="0" lean-forward="true" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pixelwars/templates/pixelwars/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="73" lean-forward="true" selection-start-line="6" selection-start-column="73" selection-end-line="6" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pixelwars/static/pixelwars/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
@@ -1165,21 +956,99 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pixelwars/static/pixelwars/js/homepage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pixelwars/templates/pixelwars/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="61" column="56" lean-forward="false" selection-start-line="61" selection-start-column="56" selection-end-line="61" selection-end-column="56" />
+          <folding>
+            <element signature="e#843#981#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pixelwars/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="50" column="65" lean-forward="false" selection-start-line="50" selection-start-column="65" selection-end-line="50" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pixelwars/templates/pixelwars/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="37" column="18" lean-forward="true" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pixelwars/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pixelwars/templates/pixelwars/standart/draw.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="22" column="48" lean-forward="false" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
+        <state relative-caret-position="166">
+          <caret line="25" column="12" lean-forward="true" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="28" />
           <folding>
-            <element signature="e#1335#1372#0#HTML" expanded="true" />
+            <element signature="e#1170#1207#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skeleton/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="32" column="1" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skeleton/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="50" column="1" lean-forward="false" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pixelwars/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="138" column="39" lean-forward="false" selection-start-line="138" selection-start-column="32" selection-end-line="138" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pixelwars/static/pixelwars/canvasshit/game.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="107" column="65" lean-forward="true" selection-start-line="107" selection-start-column="65" selection-end-line="107" selection-end-column="65" />
+        <state relative-caret-position="298">
+          <caret line="65" column="57" lean-forward="false" selection-start-line="65" selection-start-column="57" selection-end-line="65" selection-end-column="57" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pixelwars/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

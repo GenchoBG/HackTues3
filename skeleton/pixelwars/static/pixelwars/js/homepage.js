@@ -55,7 +55,7 @@ $(document).ready(function() {
             }
         }
     });
-                    
+
     clock.setTime(604799);
     clock.setCountdown(true);
     clock.start();

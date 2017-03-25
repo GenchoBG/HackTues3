@@ -22,7 +22,8 @@ var br = 0;
 
 
 var color1;
-$(function () {
+var img;
+function attachHandlers(){
     $("button").click(function () {
         color1 = $(this).val();
     });
@@ -31,7 +32,42 @@ $(function () {
         $("#colorPicker").css("background-color", color1)
     });
 
-});
+    window.addEventListener("mouseup", function (args) {
+        mishkaX = args.clientX - canvas.offsetLeft;
+        mishkaY = args.clientY - canvas.offsetTop;
+        clicked = false;
+    }, false);
+    window.addEventListener("mousemove", function (args) {
+        mishkaX = args.clientX - canvas.offsetLeft;
+        mishkaY = args.clientY - canvas.offsetTop;
+        if (mishkaX <= 500 && mishkaY <= 500) {
+            if (clicked) {
+                image[Math.floor(mishkaX / 20)][Math.floor(mishkaY / 20)] = 1;
+            }
+        }
+    }, false);
+    window.addEventListener("mousedown", function (args) {
+        mishkaX = args.clientX - canvas.offsetLeft;
+        mishkaY = args.clientY - canvas.offsetTop;
+        image[Math.floor(mishkaX / 20)][Math.floor(mishkaY / 20)] = 1;
+        clicked = true;
+        console.log(args);
+    }, false);
+
+    $("#myForm").submit(function(e){
+        e.preventDefault();
+        console.log($(this).attr("action"));
+        console.log(canvas.toDataURL("image/png"));
+
+        $.ajax({
+            url : "submit/",
+            method : 'post',
+            data : {
+                'drawing' : canvas.toDataURL("image/png")
+            }
+        })
+    });
+}
 
 var image = [];
 for (var i = 0; i < 25; i++) {
@@ -42,27 +78,6 @@ for (var i = 0; i < 25; i++) {
 }
 var mishkaX, mishkaY, clicked = false;
 
-window.addEventListener("mouseup", function (args) {
-    mishkaX = args.clientX - canvas.offsetLeft;
-    mishkaY = args.clientY - canvas.offsetTop;
-    clicked = false;
-}, false);
-window.addEventListener("mousemove", function (args) {
-    mishkaX = args.clientX - canvas.offsetLeft;
-    mishkaY = args.clientY - canvas.offsetTop;
-    if (mishkaX <= 500 && mishkaY <= 500) {
-        if (clicked) {
-            image[Math.floor(mishkaX / 20)][Math.floor(mishkaY / 20)] = 1;
-        }
-    }
-}, false);
-window.addEventListener("mousedown", function (args) {
-    mishkaX = args.clientX - canvas.offsetLeft;
-    mishkaY = args.clientY - canvas.offsetTop;
-    image[Math.floor(mishkaX / 20)][Math.floor(mishkaY / 20)] = 1;
-    clicked = true;
-    console.log(args);
-}, false);
 
 
 function update() {
@@ -118,3 +133,4 @@ function draw() {	//specialna funkcia v koqto shte pishem koda za risuvane. Shte
 }
 update();	//purvo vikane. ne go zatrivai!
 draw();	//purvo vikane. ne go zatrivai!
+attachHandlers();
