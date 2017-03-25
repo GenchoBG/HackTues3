@@ -13,7 +13,7 @@
                 <div>No players. :(</div>
             {% endif %}
         </ul>
-        {% if not currentPlayer and canJoin and playerCount < 2 %}
+        {% if canJoin and playerCount < 2 %}
             <a href="{% url 'pixelwars:joinGame' game.id %}">Join Game</a>
         {% endif %}
         {% if currentPlayer %}

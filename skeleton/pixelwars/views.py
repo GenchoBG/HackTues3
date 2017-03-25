@@ -4,6 +4,7 @@ from django.views.decorators.csrf import csrf_exempt
 
 from .models import Game, Player, Tourney
 from django.contrib.auth.models import User
+from django.db.models import Q
 from django.shortcuts import render, redirect
 from django.shortcuts import get_object_or_404
 from django.contrib.auth import authenticate, login, logout
@@ -13,42 +14,33 @@ from django.contrib.auth import authenticate, login, logout
 
 def standart(request):
     games = Game.objects.filter(active=True)
-    context = {'games': games}
+    context = {'games': games, 'judgable' : games.filter(judgeable=True)}
     return render(request, 'pixelwars/standart/index.html', context)
 
+def notActiveGameOrNoGame(player):
+    games = Game.objects.filter(Q(player1 = player) | Q(player2 = player))
+    for game in games:
+        if game.active:
+            return False
+
+    return True
 
 def readstandart(request, id):
-    # game = Game.objects.get(id=id)
     game = get_object_or_404(Game, id=id)
-    players = Player.objects.filter(game=game)
-    flag = False
-
-    try:
-        currentPlayer = Player.objects.filter(user=request.user).filter(game=game).get()
-    except:
-        currentPlayer = Player.objects.filter(user=request.user).filter(game=game)
-
-    playerCount = players.count()
+    players = (game.player1, game.player2)
     canPlay = False
-    for player in players:
-        if (player.user.id == request.user.id):
-            if player.hasDrawed == False:
-                canPlay = True
-            break
-
-    canJoin = True
-    try:
-        player = Player.objects.filter(user=request.user).get()
-        if (player.game != None):
-            canJoin = False
-    except:
-        pass
-
+    canJoin = False
+    currentPlayer = Player.objects.get(user=request.user)
+    #playerCount = Player.objects.filter(game=game)
+    if(currentPlayer in players and not currentPlayer.hasDrawed):
+        canPlay = True
+    if (not currentPlayer in players and notActiveGameOrNoGame(currentPlayer)):
+        canJoin = True
     context = {
         'canJoin': canJoin,
         'canPlay': canPlay,
-        'playerCount': playerCount,
         'currentPlayer': currentPlayer,
+        #'playerCount' : playerCount,
         'players': players,
         'game': game,
     }
@@ -67,13 +59,9 @@ def createGame(request):
     if (request.POST['theme'] != ''):
         game = Game()
         game.theme = request.POST['theme']
+        player = Player.objects.get(user=request.user)
+        game.player1 = player
         game.save()
-        user = request.user
-        player = Player()
-        player.name = user.username
-        player.user = user
-        player.game = game
-        player.save()
 
     return HttpResponseRedirect('/pixelwars/standart/')
 
@@ -86,6 +74,11 @@ def register(request):
     user.first_name = request.GET['name']
     user.last_name = request.GET['pic']
     user.save()
+    login(user)
+    player = Player(user=user)
+    player.name = user.username
+    player.save()
+
     return HttpResponseRedirect('/pixelwars/standart/')
 
 
@@ -104,14 +97,10 @@ def logOut(request):
 
 
 def joinGame(request, id):
-    if (not Player.objects.get(user=request.user)):
-        player = Player()
-        player.user = request.user
-        player.name = request.user.username
-    else:
-        player = Player.objects.get(user=request.user)
-    player.game = Game.objects.get(id=id)
-    player.save()
+    player = Player.objects.get(user=request.user)
+    game = Game.objects.get(id=id)
+    game.player2 = player
+    game.save()
     url = '/pixelwars/standart/' + id + '/'
     return HttpResponseRedirect(url)
 
@@ -145,7 +134,16 @@ def submitDrawing(request, id):
 
 
 def judge(request, id):
-    pass
+    game = Game.objects.get(id=id)
+    drawing1 = game.drawing1
+    drawing2 = game.drawing2
+    print(Game.player_set.all())
+    context = {
+        'game' : game,
+        'drawing1' : drawing1,
+        'drawing2' : drawing2,
+    }
+    return render(request, 'pixelwars/standart/judge.html', context)
 
 
 def viewUser(request, id):

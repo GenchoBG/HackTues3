@@ -2,20 +2,26 @@
 {% block main %}
     <div class="container">
         {% if games %}
-    <ul>
-        {% for game in games %}
-        <li><a href="{% url 'pixelwars:readstandart' game.id %}">{{ game.theme }}</a></li>
-        {% endfor %}
-    </ul>
-    {% else %}
-        <h3>No games currently open.</h3>
-    {% endif %}
-    <form action="{% url 'pixelwars:createGame' %}" method="post">
-        <input type="text" name="theme" placeholder="Game Theme">
-        {% csrf_token %}
-        <button type="submit">
-            New Game
-        </button>
-    </form>
+            <ul>
+                {% for game in games %}
+                    <li><a href="{% url 'pixelwars:readstandart' game.id %}">{{ game.theme }}</a></li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <h3>No games currently open.</h3>
+        {% endif %}
+        <form action="{% url 'pixelwars:createGame' %}" method="post">
+            <input type="text" name="theme" placeholder="Game Theme">
+            {% csrf_token %}
+            <button type="submit">
+                New Game
+            </button>
+        </form>
+        <ul>
+            {% for game in judgable %}
+                <li><a href="{% url 'pixelwars:judge' game.id %}">{{ game.theme }}</a></li>
+            {% endfor %}
+        </ul>
+
     </div>
 {% endblock %}
