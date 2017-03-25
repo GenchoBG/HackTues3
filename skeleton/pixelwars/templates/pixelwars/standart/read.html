@@ -16,7 +16,7 @@
         {% if canJoin and playerCount < 2 %}
             <a href="{% url 'pixelwars:joinGame' game.id %}">Join Game</a>
         {% endif %}
-        {% if currentPlayer %}
+        {% if canLeave %}
             <a href="{% url 'pixelwars:leaveGame' game.id %}">Leave Game</a>
         {% endif %}
         {% if canPlay %}

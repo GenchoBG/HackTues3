@@ -1,3 +1,4 @@
+from django.http import JsonResponse
 from django.views import generic
 from django.http import HttpResponseRedirect
 from django.views.decorators.csrf import csrf_exempt
@@ -27,11 +28,18 @@ def notActiveGameOrNoGame(player):
 
 def readstandart(request, id):
     game = get_object_or_404(Game, id=id)
-    players = (game.player1, game.player2)
+    players = []
+    if(game.player1 != None):
+        players.append(game.player1)
+    if (game.player2 != None):
+        players.append(game.player2)
     canPlay = False
     canJoin = False
+    canLeave = False
     currentPlayer = Player.objects.get(user=request.user)
-    #playerCount = Player.objects.filter(game=game)
+    if(currentPlayer in players):
+        canLeave = True
+    playerCount = len(players)
     if(currentPlayer in players and not currentPlayer.hasDrawed):
         canPlay = True
     if (not currentPlayer in players and notActiveGameOrNoGame(currentPlayer)):
@@ -40,7 +48,8 @@ def readstandart(request, id):
         'canJoin': canJoin,
         'canPlay': canPlay,
         'currentPlayer': currentPlayer,
-        #'playerCount' : playerCount,
+        'playerCount' : playerCount,
+        'canLeave' : canLeave,
         'players': players,
         'game': game,
     }
@@ -74,7 +83,7 @@ def register(request):
     user.first_name = request.GET['name']
     user.last_name = request.GET['pic']
     user.save()
-    login(user)
+    login(request, user)
     player = Player(user=user)
     player.name = user.username
     player.save()
@@ -106,10 +115,12 @@ def joinGame(request, id):
 
 
 def leaveGame(request, id):
-    player = Player.objects.get(user=request.user)
-    player.hasDrawed = False
-    player.game = None
-    player.save()
+    game = Game.objects.get(id=id)
+    if(game.player1.user==request.user):
+        game.player1=None
+    if(game.player2.user==request.user):
+        game.player2=None
+    game.save()
     url = '/pixelwars/standart/' + id + '/'
     return HttpResponseRedirect(url)
 
@@ -121,27 +132,38 @@ def draw(request, id):
 
 @csrf_exempt
 def submitDrawing(request, id):
-    player = Player.objects.get(user=request.user)
     game = Game.objects.get(id=id)
+    player = None
+
+    if(game.player1 and game.player1.user == request.user):
+        player = game.player1
+    if(game.player2.user == request.user):
+        player = game.player2
+
     player.hasDrawed = True
-
     drawing = request.POST.get('drawing', 0)
-    print(drawing)
-    player.drawing = drawing
-    player.save()
 
-    return HttpResponseRedirect('/pixelwars/standart/' + id + "/")
+    if (game.player1 and game.player1.user == request.user):
+        game.drawing1 = drawing
+    if (game.player2.user == request.user):
+        game.drawing2 = drawing
+
+    player.save()
+    game.save()
+
+    return JsonResponse({"url" : '/pixelwars/standart/' + id + "/"})
 
 
 def judge(request, id):
     game = Game.objects.get(id=id)
     drawing1 = game.drawing1
     drawing2 = game.drawing2
-    print(Game.player_set.all())
     context = {
         'game' : game,
         'drawing1' : drawing1,
         'drawing2' : drawing2,
+        'player1' : game.player1,
+        'player2' : game.player2,
     }
     return render(request, 'pixelwars/standart/judge.html', context)
 

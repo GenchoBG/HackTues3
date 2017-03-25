@@ -56,8 +56,8 @@ function attachHandlers(){
 
     $("#myForm").submit(function(e){
         e.preventDefault();
-        console.log($(this).attr("action"));
-        console.log(canvas.toDataURL("image/png"));
+        //console.log($(this).attr("action"));
+        //console.log(canvas.toDataURL("image/png"));
 
         $.ajax({
             url : "submit/",
@@ -65,6 +65,9 @@ function attachHandlers(){
             data : {
                 'drawing' : canvas.toDataURL("image/png")
             }
+        }).then(function (response) {
+            console.log(response);
+            window.location = response["url"];
         })
     });
 }
