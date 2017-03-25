@@ -1,0 +1,26 @@
+{% extends 'pixelwars/base.html' %}
+{% block main %}
+    <div class="container">
+        <h1>Page for game with id {{ game.id }} and theme {{ game.theme }}</h1>
+        <h2>Players : ({{ playerCount }}/2)</h2>
+        <ul>
+            {% if players %}
+                {% for player in players %}
+                    <li><a href="{% url 'pixelwars:viewUser' player.user.id %}">{{ player.name }} </a>
+                        {% if player.hasDrawed %}&#10003;{% endif %}</li>
+                {% endfor %}
+            {% else %}
+                <div>No players. :(</div>
+            {% endif %}
+        </ul>
+        {% if not currentPlayer and canJoin and playerCount < 2 %}
+            <a href="{% url 'pixelwars:joinGame' game.id %}">Join Game</a>
+        {% endif %}
+        {% if currentPlayer %}
+            <a href="{% url 'pixelwars:leaveGame' game.id %}">Leave Game</a>
+        {% endif %}
+        {% if canPlay %}
+            <a href="{% url 'pixelwars:draw' game.id %}">Draw</a>
+        {% endif %}
+    </div>
+{% endblock %}
