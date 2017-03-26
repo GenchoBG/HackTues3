@@ -52,26 +52,25 @@
                     </ul>
                 </div>
                 <div style="" id="Description" class="tabcontent">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <ul>
+                        <li>It is multiplayer drawing game</li>
+                        <li>You can challenge somebody to see who is a better artist</li>
+                        <li>You can test your a(r/u)tistic abilities</li>
+                        <li>It's FREE</li>
+                    </ul>
                 </div>
                 <div id="Topplayers" class="tabcontent">
-                    <ul>
+                    <ul class="arrows">
                         {% for player in players %}
-                            <li>{{ player }} - {{ player.wins }}</li>
+                            <li class="arrows">{{ player }} &rarr; {{ player.wins }}</li>
                         {% endfor %}
                     </ul>
 
                 </div>
                 {% if user.is_authenticated %}
                     <div id="Game_modes" class="tabcontent">
-                        <a href="{% url 'pixelwars:standart' %}">Standart</a>
-                        <br>
-                        <a href="{% url 'pixelwars:tourney' %}">Tourney (not yet implemented)</a>
+                        <a class="btn btn-info btn-lg btn-block" href="{% url 'pixelwars:standart' %}">Standart</a>
+                        <a class="btn btn-default btn-lg btn-block" href="{% url 'pixelwars:tourney' %}">Tourney (not yet implemented)</a>
                     </div>
                 {% endif %}
             </div>

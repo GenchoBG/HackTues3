@@ -30,4 +30,15 @@ class Game(models.Model):
 
 
 class Tourney(models.Model):
-    name = models.CharField(max_length=250, null=True)
+    theme = models.CharField(max_length=250, null=True)
+    drawing1 = models.ImageField(null=True, blank=True, upload_to="gallery/", )
+    drawing2 = models.ImageField(null=True, blank=True, upload_to="gallery/")
+    drawing3 = models.ImageField(null=True, blank=True, upload_to="gallery/")
+    drawing4 = models.ImageField(null=True, blank=True, upload_to="gallery/")
+    player1 = models.ForeignKey(Player, null=True, blank=True, related_name="tourneyplayer1")
+    player2 = models.ForeignKey(Player, null=True, blank=True, related_name="tourneyplayer2")
+    player3 = models.ForeignKey(Player, null=True, blank=True, related_name="tourneyplayer3")
+    player4 = models.ForeignKey(Player, null=True, blank=True, related_name="tourneyplayer4")
+
+    def __str__(self):
+        return self.theme

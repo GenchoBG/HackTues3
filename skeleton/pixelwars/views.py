@@ -16,7 +16,7 @@ from django.contrib.auth import authenticate, login, logout
 def standart(request):
     judgeGames = Game.objects.filter(active=True).filter(judgable=True).all()
     games = Game.objects.filter(active=True).filter(judgable=False).all()
-    context = {'games': games, 'judgeGames' : judgeGames}
+    context = {'games': games, 'judgeGames': judgeGames}
     return render(request, 'pixelwars/standart/index.html', context)
 
 
@@ -65,7 +65,7 @@ def index(request):
 
 
 def tourney(request):
-    return render(request, 'pixelwars/tourney/index.html')
+    return render(request, 'pixelwars/tourney/index.html', {'tourneys' : Tourney.objects.all()})
 
 
 def createGame(request):
@@ -164,8 +164,7 @@ def submitDrawing(request, id):
 
     player.save()
 
-
-    if(game.player1 and game.player1.hasDrawed and game.player2 and game.player2.hasDrawed):
+    if (game.player1 and game.player1.hasDrawed and game.player2 and game.player2.hasDrawed):
         player1 = game.player1
         player1.hasDrawed = False
         player1.save()
@@ -176,7 +175,7 @@ def submitDrawing(request, id):
 
     game.save()
 
-    return JsonResponse({"url": '/pixelwars/standart/' + id + "/"})
+    return JsonResponse({"url": '/pixelwars/standart/'})
 
 
 def judge(request, id):
@@ -231,4 +230,4 @@ def vote2(request, id):
     game.save()
     return HttpResponseRedirect('/')
 
-#LIST judge views
+    # LIST judge views

@@ -2,14 +2,15 @@
 {% block main %}
     <div class="container">
         <div class="row">
-            <div class="col-sm-6 col-md-5 col-lg-5 col-xl-5 col-xs-5">
+            <div class="col-md-5">
                 <img border="3px solid black" class="img" src="{{ drawing1 }}">
                 <a href="{% url 'pixelwars:vote1' game.id %}" class="btn btn-success">Better</a>
             </div>
-            <div class="col-sm-1" id="vs">
+            <div class="col-md-1">
+                <h1 id="vs">{{ game.theme }}</h1>
                 <a href="#" class="btn btn-danger disabled"><span style="font-size: 40px">VS</span></a>
             </div>
-            <div class="col-sm-6 col-md-5 col-lg-5 col-xl-5 col-xs-5">
+            <div class="col-md-5">
                 <img border="3px solid black" class="img" src="{{ drawing2 }}">
                 <a href="{% url 'pixelwars:vote2' game.id %}" class="btn btn-success pull-right">Better</a>
             </div>
