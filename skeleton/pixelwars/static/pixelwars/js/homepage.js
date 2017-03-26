@@ -40,7 +40,8 @@ jQuery(document).ready(function ($) {
 });
 
         /*clock*/
-var clock; 
+var clock;
+
 $(document).ready(function() {
     var clock;
 
@@ -56,7 +57,9 @@ $(document).ready(function() {
         }
     });
 
-    clock.setTime(604799);
+    var timeuntil = moment().hour(20).minute(0).second(0).diff(moment(), 'seconds');
+
+    clock.setTime(timeuntil);
     clock.setCountdown(true);
     clock.start();
 

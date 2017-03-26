@@ -1,5 +1,15 @@
 {% extends 'pixelwars/base.html' %}
 {% block main %}
+    <div id="fb-root"></div>
+    <div id="fb-root"></div>
+    <script>(function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/bg_BG/sdk.js#xfbml=1&version=v2.8";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
     <div class="container">
         <ul>
             {% for tourney in tourneys %}
@@ -77,6 +87,7 @@
                            href="{% url 'pixelwars:jointourney' tourney.id %}" role="button">Join</a>
                     </div>
                 {% else %}
+
                     <div style="transform: translate(15px)" class="col-md-offset-4 col-md-4">
                         <a style="margin-top: 10px" class="btn btn-warning btn-lg btn-block" href="#"
                            role="button">Draw</a>
@@ -85,6 +96,7 @@
                         <a style="margin-top: 5px" class="btn btn-danger btn-lg btn-block"
                            href="{% url 'pixelwars:leavetourney' tourney.id %}" role="button">Leave</a>
                     </div>
+                    <div class="fb-send" data-href="{% url 'pixelwars:readtourney' tourney.id %}"></div>
                 {% endif %}
             </div>
         </div>

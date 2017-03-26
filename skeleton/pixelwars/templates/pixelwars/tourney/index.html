@@ -1,10 +1,15 @@
 {% extends 'pixelwars/base.html' %}
 {% block main %}
     <div class="container">
-    <ul>
-        {% for tourney in tourneys %}
-            <li><a href="{% url 'pixelwars:readtourney' tourney.id %}">{{ tourney }}</a></li>
-        {% endfor %}
-    </ul>
+        <h1>Available tourneys:</h1>
+        {% if tourneys %}
+            <div class="list-group">
+                {% for tourney in tourneys %}
+                    <a class="list-group-item" href="{% url 'pixelwars:readtourney' tourney.id %}">{{ tourney }}</a>
+                {% endfor %}
+            </div>
+        {% else %}
+            <h3>No tourneys available :(</h3>
+        {% endif %}
     </div>
 {% endblock %}

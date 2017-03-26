@@ -1,14 +1,35 @@
 {% extends 'pixelwars/base.html' %}
 {% block main %}
     <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div style="border-radius: 15%; border: 1px solid black; padding:20px; background-color: whitesmoke; color: black; ">
+                    <table class="table">
+                    <thead>
+                        <th><h3>{{ username }}</h3></th>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Name</td>
+                        <td>{{ name }}</td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>{{ email }}</td>
+                    </tr>
+                    <tr>
+                        <td>Date joined</td>
+                        <td>{{ datejoined    }}</td>
+                    </tr>
+                    <tr>
+                        <td>Wins</td>
+                        <td>{{ wins }}</td>
+                    </tr>
+                    </tbody>
+                </table>
+                </div>
 
-        <div>Username: {{ username }}</div>
-        <br>
-        <div>Name: {{ name }}</div>
-        <br>
-        <div>Email: {{ email }}</div>
-        <br>
-        <div>Date joined: {{ datejoined }}</div>
-        <br>
+            </div>
+        </div>
     </div>
 {% endblock %}

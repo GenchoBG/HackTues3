@@ -235,11 +235,13 @@ def judge(request, id):
 
 def viewUser(request, id):
     user = User.objects.get(id=id)
+    userPlayer = Player.objects.get(user=user)
     context = {
         'username': user.username,
         'email': user.email,
         'name': user.first_name,
         'datejoined': user.date_joined,
+        'wins' : userPlayer.wins
     }
     return render(request, 'pixelwars/user/readprofile.html', context)
 

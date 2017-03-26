@@ -32,22 +32,10 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pixelwars/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="40" column="13" lean-forward="true" selection-start-line="37" selection-start-column="4" selection-end-line="40" selection-end-column="13" />
+            <state relative-caret-position="90">
+              <caret line="12" column="50" lean-forward="false" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pixelwars/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="25" column="58" lean-forward="false" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -56,80 +44,102 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pixelwars/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="76" column="43" lean-forward="false" selection-start-line="76" selection-start-column="43" selection-end-line="76" selection-end-column="43" />
+            <state relative-caret-position="85">
+              <caret line="5" column="38" lean-forward="false" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pixelwars/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="25" column="58" lean-forward="false" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
               <folding>
-                <element signature="e#0#36#0" expanded="true" />
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/skeleton/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="387">
+              <caret line="32" column="1" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="86" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="read.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pixelwars/templates/pixelwars/standart/read.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="28" column="10" lean-forward="false" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pixelwars/templates/pixelwars/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="177">
+              <caret line="76" column="20" lean-forward="true" selection-start-line="76" selection-start-column="20" selection-end-line="80" selection-end-column="26" />
+              <folding>
+                <element signature="e#2524#2566#0#HTML" expanded="true" />
+                <element signature="e#2865#2895#0#HTML" expanded="true" />
+                <element signature="e#3943#3973#0#HTML" expanded="true" />
+                <element signature="e#4446#4474#0#HTML" expanded="true" />
+                <element signature="e#5253#5259#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pixelwars/templates/pixelwars/tourney/index.html">
+        <entry file="file://$PROJECT_DIR$/pixelwars/templates/pixelwars/standart/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="66" lean-forward="false" selection-start-line="5" selection-start-column="66" selection-end-line="5" selection-end-column="66" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="read.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pixelwars/templates/pixelwars/tourney/read.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="83" column="53" lean-forward="false" selection-start-line="83" selection-start-column="53" selection-end-line="83" selection-end-column="53" />
+            <state relative-caret-position="293">
+              <caret line="30" column="34" lean-forward="false" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
               <folding>
-                <element signature="e#356#380#0#HTML" expanded="true" />
-                <element signature="e#507#532#0#HTML" expanded="true" />
-                <element signature="e#852#876#0#HTML" expanded="true" />
-                <element signature="e#1003#1028#0#HTML" expanded="true" />
-                <element signature="e#1348#1372#0#HTML" expanded="true" />
-                <element signature="e#1499#1524#0#HTML" expanded="true" />
-                <element signature="e#1844#1868#0#HTML" expanded="true" />
-                <element signature="e#1995#2020#0#HTML" expanded="true" />
-                <element signature="e#2356#2381#0#HTML" expanded="true" />
-                <element signature="e#2508#2533#0#HTML" expanded="true" />
-                <element signature="e#2869#2894#0#HTML" expanded="true" />
-                <element signature="e#3021#3046#0#HTML" expanded="true" />
-                <element signature="e#3382#3406#0#HTML" expanded="true" />
-                <element signature="e#3533#3558#0#HTML" expanded="true" />
-                <element signature="e#3872#3906#0#HTML" expanded="true" />
-                <element signature="e#3968#3992#0#HTML" expanded="true" />
-                <element signature="e#4215#4249#0#HTML" expanded="true" />
-                <element signature="e#4311#4335#0#HTML" expanded="true" />
-                <element signature="e#4584#4607#0#HTML" expanded="true" />
+                <element signature="e#124#149#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="game.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pixelwars/static/pixelwars/canvasshit/game.js">
+      <file leaf-file-name="readprofile.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pixelwars/templates/pixelwars/user/readprofile.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="188" column="3" lean-forward="false" selection-start-line="188" selection-start-column="3" selection-end-line="188" selection-end-column="3" />
-              <folding />
+            <state relative-caret-position="89">
+              <caret line="8" column="50" lean-forward="false" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+              <folding>
+                <element signature="e#163#274#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="draw.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pixelwars/templates/pixelwars/standart/draw.html">
+      <file leaf-file-name="read.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pixelwars/templates/pixelwars/tourney/read.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="21" column="21" lean-forward="false" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-              <folding />
+            <state relative-caret-position="480">
+              <caret line="98" column="93" lean-forward="false" selection-start-line="98" selection-start-column="93" selection-end-line="98" selection-end-column="93" />
+              <folding>
+                <element signature="e#4907#4941#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pixelwars/static/pixelwars/css/style.css">
+      <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pixelwars/tests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="596">
-              <caret line="7231" column="1" lean-forward="false" selection-start-line="7231" selection-start-column="1" selection-end-line="7231" selection-end-column="1" />
+            <state relative-caret-position="51">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -141,9 +151,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -156,6 +166,10 @@
       <find>02</find>
       <find>[</find>
       <find>atta</find>
+      <find>setTime</find>
+      <find>arrows</find>
+      <find>view</find>
+      <find>tour</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -171,26 +185,27 @@
         <option value="$PROJECT_DIR$/skeleton/urls.py" />
         <option value="$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/django/contrib/auth/models.py" />
         <option value="$PROJECT_DIR$/pixelwars/static/pixelwars/js/profile.js" />
-        <option value="$PROJECT_DIR$/pixelwars/templates/pixelwars/user/readprofile.html" />
         <option value="$PROJECT_DIR$/pixelwars/static/pixelwars/canvasshit/style.css" />
         <option value="$PROJECT_DIR$/pixelwars/static/pixelwars/js/jquery.min.js" />
-        <option value="$PROJECT_DIR$/pixelwars/static/pixelwars/js/homepage.js" />
         <option value="$PROJECT_DIR$/skeleton/settings.py" />
         <option value="$PROJECT_DIR$/pixelwars/static/pixelwars/canvasshit/styles.css" />
         <option value="$PROJECT_DIR$/pixelwars/static/pixelwars/canvasshit/canvasstyle.css" />
-        <option value="$PROJECT_DIR$/pixelwars/templates/pixelwars/standart/read.html" />
-        <option value="$PROJECT_DIR$/pixelwars/templates/pixelwars/standart/index.html" />
         <option value="$PROJECT_DIR$/pixelwars/templates/pixelwars/standart/judge.html" />
-        <option value="$PROJECT_DIR$/pixelwars/templates/pixelwars/index.html" />
-        <option value="$PROJECT_DIR$/pixelwars/templates/pixelwars/base.html" />
         <option value="$PROJECT_DIR$/pixelwars/templates/pixelwars/standart/draw.html" />
         <option value="$PROJECT_DIR$/pixelwars/static/pixelwars/canvasshit/game.js" />
-        <option value="$PROJECT_DIR$/pixelwars/models.py" />
         <option value="$PROJECT_DIR$/pixelwars/static/pixelwars/css/style.css" />
-        <option value="$PROJECT_DIR$/pixelwars/templates/pixelwars/tourney/index.html" />
         <option value="$PROJECT_DIR$/pixelwars/urls.py" />
+        <option value="$PROJECT_DIR$/pixelwars/templates/pixelwars/tourney/index.html" />
+        <option value="$PROJECT_DIR$/pixelwars/static/pixelwars/js/moment.min.js" />
+        <option value="$PROJECT_DIR$/pixelwars/templates/pixelwars/base.html" />
+        <option value="$PROJECT_DIR$/pixelwars/static/pixelwars/js/homepage.js" />
+        <option value="$PROJECT_DIR$/pixelwars/templates/pixelwars/index.html" />
+        <option value="$PROJECT_DIR$/pixelwars/templates/pixelwars/standart/index.html" />
+        <option value="$PROJECT_DIR$/pixelwars/models.py" />
         <option value="$PROJECT_DIR$/pixelwars/views.py" />
+        <option value="$PROJECT_DIR$/pixelwars/templates/pixelwars/standart/read.html" />
         <option value="$PROJECT_DIR$/pixelwars/templates/pixelwars/tourney/read.html" />
+        <option value="$PROJECT_DIR$/pixelwars/templates/pixelwars/user/readprofile.html" />
       </list>
     </option>
   </component>
@@ -891,13 +906,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="39" lean-forward="false" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/somename/migrations/__init__.py" />
     <entry file="file://$PROJECT_DIR$/somename/tests.py" />
     <entry file="file://$PROJECT_DIR$/somename/views.py" />
@@ -970,28 +978,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pixelwars/static/pixelwars/js/flipclock.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/django/contrib/auth/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="319" column="63" lean-forward="false" selection-start-line="319" selection-start-column="63" selection-end-line="319" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pixelwars/templates/pixelwars/user/readprofile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1013,14 +1003,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/skeleton/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="32" column="1" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="86" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pixelwars/static/pixelwars/canvasshit/eraser.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1031,25 +1013,11 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pixelwars/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/skeleton/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
           <caret line="33" column="14" lean-forward="false" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pixelwars/static/pixelwars/js/homepage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1071,22 +1039,6 @@
     <entry file="file://$PROJECT_DIR$/media/ebca3b8940adcd4a27f19f216e3530a2.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pixelwars/templates/pixelwars/standart/read.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pixelwars/templates/pixelwars/standart/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="27" column="81" lean-forward="false" selection-start-line="27" selection-start-column="81" selection-end-line="27" selection-end-column="81" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pixelwars/static/pixelwars/canvasshit/styles.css">
@@ -1115,30 +1067,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pixelwars/templates/pixelwars/index.html">
+    <entry file="file://$PROJECT_DIR$/pixelwars/static/pixelwars/canvasshit/game.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="56" column="84" lean-forward="false" selection-start-line="56" selection-start-column="84" selection-end-line="56" selection-end-column="84" />
-          <folding>
-            <element signature="e#3465#3471#0#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="207">
+          <caret line="188" column="3" lean-forward="false" selection-start-line="188" selection-start-column="3" selection-end-line="188" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pixelwars/static/pixelwars/js/moment.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pixelwars/static/pixelwars/js/flipclock.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="893" column="9" lean-forward="true" selection-start-line="893" selection-start-column="9" selection-end-line="893" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pixelwars/static/pixelwars/js/homepage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="59" column="74" lean-forward="true" selection-start-line="59" selection-start-column="74" selection-end-line="59" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pixelwars/static/pixelwars/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8">
+          <caret line="7134" column="9" lean-forward="false" selection-start-line="7134" selection-start-column="3" selection-end-line="7134" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pixelwars/templates/pixelwars/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="32" column="85" lean-forward="false" selection-start-line="32" selection-start-column="85" selection-end-line="32" selection-end-column="85" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="221">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pixelwars/static/pixelwars/canvasshit/game.js">
+    <entry file="file://$PROJECT_DIR$/pixelwars/templates/pixelwars/tourney/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="188" column="3" lean-forward="false" selection-start-line="188" selection-start-column="3" selection-end-line="188" selection-end-column="3" />
+        <state relative-caret-position="204">
+          <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -1151,35 +1131,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pixelwars/static/pixelwars/css/style.css">
+    <entry file="file://$PROJECT_DIR$/pixelwars/templates/pixelwars/standart/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="596">
-          <caret line="7231" column="1" lean-forward="false" selection-start-line="7231" selection-start-column="1" selection-end-line="7231" selection-end-column="1" />
-          <folding />
+        <state relative-caret-position="293">
+          <caret line="30" column="34" lean-forward="false" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+          <folding>
+            <element signature="e#124#149#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pixelwars/templates/pixelwars/tourney/index.html">
+    <entry file="file://$PROJECT_DIR$/pixelwars/templates/pixelwars/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="66" lean-forward="false" selection-start-line="5" selection-start-column="66" selection-end-line="5" selection-end-column="66" />
-          <folding />
+        <state relative-caret-position="177">
+          <caret line="76" column="20" lean-forward="true" selection-start-line="76" selection-start-column="20" selection-end-line="80" selection-end-column="26" />
+          <folding>
+            <element signature="e#2524#2566#0#HTML" expanded="true" />
+            <element signature="e#2865#2895#0#HTML" expanded="true" />
+            <element signature="e#3943#3973#0#HTML" expanded="true" />
+            <element signature="e#4446#4474#0#HTML" expanded="true" />
+            <element signature="e#5253#5259#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pixelwars/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="40" column="13" lean-forward="true" selection-start-line="37" selection-start-column="4" selection-end-line="40" selection-end-column="13" />
+        <state relative-caret-position="90">
+          <caret line="12" column="50" lean-forward="false" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/skeleton/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="32" column="1" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pixelwars/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pixelwars/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="38" lean-forward="false" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pixelwars/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
+        <state relative-caret-position="170">
           <caret line="25" column="58" lean-forward="false" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
@@ -1187,40 +1199,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pixelwars/views.py">
+    <entry file="file://$PROJECT_DIR$/pixelwars/templates/pixelwars/standart/read.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="76" column="43" lean-forward="false" selection-start-line="76" selection-start-column="43" selection-end-line="76" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="242">
+          <caret line="28" column="10" lean-forward="false" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pixelwars/templates/pixelwars/tourney/read.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="83" column="53" lean-forward="false" selection-start-line="83" selection-start-column="53" selection-end-line="83" selection-end-column="53" />
+        <state relative-caret-position="480">
+          <caret line="98" column="93" lean-forward="false" selection-start-line="98" selection-start-column="93" selection-end-line="98" selection-end-column="93" />
           <folding>
-            <element signature="e#356#380#0#HTML" expanded="true" />
-            <element signature="e#507#532#0#HTML" expanded="true" />
-            <element signature="e#852#876#0#HTML" expanded="true" />
-            <element signature="e#1003#1028#0#HTML" expanded="true" />
-            <element signature="e#1348#1372#0#HTML" expanded="true" />
-            <element signature="e#1499#1524#0#HTML" expanded="true" />
-            <element signature="e#1844#1868#0#HTML" expanded="true" />
-            <element signature="e#1995#2020#0#HTML" expanded="true" />
-            <element signature="e#2356#2381#0#HTML" expanded="true" />
-            <element signature="e#2508#2533#0#HTML" expanded="true" />
-            <element signature="e#2869#2894#0#HTML" expanded="true" />
-            <element signature="e#3021#3046#0#HTML" expanded="true" />
-            <element signature="e#3382#3406#0#HTML" expanded="true" />
-            <element signature="e#3533#3558#0#HTML" expanded="true" />
-            <element signature="e#3872#3906#0#HTML" expanded="true" />
-            <element signature="e#3968#3992#0#HTML" expanded="true" />
-            <element signature="e#4215#4249#0#HTML" expanded="true" />
-            <element signature="e#4311#4335#0#HTML" expanded="true" />
-            <element signature="e#4584#4607#0#HTML" expanded="true" />
+            <element signature="e#4907#4941#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pixelwars/templates/pixelwars/user/readprofile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="8" column="50" lean-forward="false" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+          <folding>
+            <element signature="e#163#274#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>

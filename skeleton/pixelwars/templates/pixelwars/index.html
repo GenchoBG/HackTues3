@@ -2,11 +2,9 @@
 {% load staticfiles %}
 {% block main %}
     <div class="container">
-
-    </div>
-    <div class="container">
         <div class="row">
             <div class="col-md-7">
+                <h1>Tournament starts in:</h1>
                 <div class="clock" style="margin:2em 0;"></div>
                 <div class="message"></div>
                 <div id="jssor_1"
@@ -41,14 +39,30 @@
                     <button class="tablinks" onclick="tab_Content(event, 'Topplayers')">Top players</button>
                     <button class="tablinks" onclick="tab_Content(event, 'Game_modes')">Game modes</button>
                 </div>
-                <div id="Rules" class="tabcontent">
+                <div style="max-height: 370px; overflow: auto;" id="Rules" class="tabcontent">
                     <ul>
-                        <li>...</li>
-                        <li>...</li>
-                        <li>...</li>
-                        <li>...</li>
-                        <li>...</li>
-                        <li>...</li>
+                        <li><h4><strong>Every person is once а player and than once a judge (option 1). Every person
+                            should have two votes to participate in one game.</strong></h4></li>
+                        <li style="list-style-type: none;"><h4><i>One vs One mode:</i></h4></li>
+                        <li>Two players – one description</li>
+                        <li>Both of the players have a pixel chart in front them on which they have to draw their ideas
+                            ... the given description
+                        </li>
+                        <li>Option 1: After both the two players have finished their masterpieces the third person that
+                            is their judge in that game has 30 seconds to decide whose drawing is better.
+                        </li>
+                        <li>Option 2: After both the two players have finished their masterpieces, the projects are
+                            exposed anonymously on the home page so that everybody can vote. After 30 seconds the votes
+                            are being counted. Of course if the votes are equal, a second round is played.
+                        </li>
+                        <li>The most important part of the game is the joy!!!!!</li>
+                        <li style="list-style-type: none;"><h4><i>Tournament mode:</i></h4></li>
+                        <li>First round – one description (easy – one word)</li>
+                        <li>Again 2:30 minutes time for everybody</li>
+                        <li>The drawings are being rated by one of our beautiful (handsome) superusers</li>
+                        <li>Second round – second description (a little bigger)</li>
+                        <li>2 players and then the <span
+                                style="font-weight: bolder;">WINNEEEEEEEER!!!!!!!!!!!!!!!!</span></li>
                     </ul>
                 </div>
                 <div style="" id="Description" class="tabcontent">
@@ -60,17 +74,17 @@
                     </ul>
                 </div>
                 <div id="Topplayers" class="tabcontent">
-                    <ul class="arrows">
+                    <div class="list-group">
                         {% for player in players %}
-                            <li class="arrows">{{ player }} &rarr; {{ player.wins }}</li>
+                            <a href="{% url 'pixelwars:viewUser' player.user.pk %}" class="list-group-item">{{ player }} &rarr; {{ player.wins }}</a>
                         {% endfor %}
-                    </ul>
-
+                    </div>
                 </div>
                 {% if user.is_authenticated %}
                     <div id="Game_modes" class="tabcontent">
                         <a class="btn btn-info btn-lg btn-block" href="{% url 'pixelwars:standart' %}">Standart</a>
-                        <a class="btn btn-default btn-lg btn-block" href="{% url 'pixelwars:tourney' %}">Tourney (not yet implemented)</a>
+                        <a class="btn btn-default btn-lg btn-block" href="{% url 'pixelwars:tourney' %}">Tourney (not
+                            yet implemented)</a>
                     </div>
                 {% endif %}
             </div>
