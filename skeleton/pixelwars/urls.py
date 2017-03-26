@@ -16,6 +16,15 @@ urlpatterns = [
     #/pixelwars/tourney/
     url(r'tourney/$', views.tourney, name="tourney"),
 
+    #/pixelwars/tourney/<id>/
+    url(r'tourney/(?P<id>\d+)/$', views.readtourney, name="readtourney"),
+
+    #/pixelwars/tourney/<id>/join/
+    url(r'tourney/(?P<id>\d+)/join/$', views.jointourney, name="jointourney"),
+
+    #/pixelwars/tourney/<id>/leave/
+    url(r'tourney/(?P<id>\d+)/leave/$', views.leavetourney, name="leavetourney"),
+
     #TODO:
     #/pixelwars/tourney/<id>/
     #url(r'tourney/(?P<id>\d+)/$', views.readtourney, name='readtourney'),

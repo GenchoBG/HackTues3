@@ -7149,3 +7149,84 @@ li.arrows:before {
     top: 0.9em;
     position: relative;
 }
+
+/*chevron*/
+.chevron:first-child {
+    margin-top: 20px;
+}
+.chevron {
+    position: relative;
+    text-align: center;
+    padding: 12px 0;
+    width: 290px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    color: #fff;
+
+}
+.chevron:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 51%;
+    -webkit-transform: skew(0deg, 8deg);
+    -moz-transform: skew(0deg, 8deg);
+    -ms-transform: skew(0deg, 8deg);
+    -o-transform: skew(0deg, 8deg);
+    transform: skew(0deg, 8deg);
+    background-color: #365984;
+    background-color: rgb(54, 89, 132);
+
+    -moz-box-shadow: 0 0 0 2px #365984;
+    -webkit-box-shadow: 0 0 0 2px #365984;
+    box-shadow: 0 0 0 2px #365984;
+
+    border-left: 1px dashed #fff;
+    border-top: 1px dashed #fff;
+    border-bottom: 1px dashed #fff;
+}
+.chevron:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    -webkit-transform: skew(0deg, -8deg);
+    -moz-transform: skew(0deg, -8deg);
+    -ms-transform: skew(0deg, -8deg);
+    -o-transform: skew(0deg, -8deg);
+    transform: skew(0deg, -8deg);
+    background-color: rgb(54, 89, 132);
+
+    -moz-box-shadow: 0 0 0 2px #365984;
+    -webkit-box-shadow: 0 0 0 2px #365984;
+    box-shadow: 0 0 0 2px #365984;
+
+    border-right: 1px dashed #fff;
+    border-top: 1px dashed #fff;
+    border-bottom: 1px dashed #fff;
+}
+.chevron [class^=dash]{
+    width: 100%;
+    height: 0px;
+    position: absolute;
+    z-index: 1;
+}
+.chevron .chevron-inner{
+    position: relative;
+    z-index: 2;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    font-size: 18px;
+}
+.chevron-content{
+    padding: 0 10px;
+
+}
+
+.style_chevr{
+    width: 200px;
+    height: 65px;
+}

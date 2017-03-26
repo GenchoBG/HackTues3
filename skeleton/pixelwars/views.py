@@ -65,7 +65,50 @@ def index(request):
 
 
 def tourney(request):
-    return render(request, 'pixelwars/tourney/index.html', {'tourneys' : Tourney.objects.all()})
+    return render(request, 'pixelwars/tourney/index.html', {'tourneys': Tourney.objects.all()})
+
+
+def readtourney(request, id):
+    tourney = get_object_or_404(Tourney, id=id)
+    canJoin = True
+    if ((tourney.player1 and tourney.player1.user == request.user) or (
+        tourney.player2 and tourney.player2.user == request.user) or (
+        tourney.player3 and tourney.player3.user == request.user) or (
+        tourney.player4 and tourney.player4.user == request.user)):
+        canJoin = False
+    return render(request, 'pixelwars/tourney/read.html', {'tourney': tourney, 'canJoin': canJoin})
+
+
+def jointourney(request, id):
+    tourney = Tourney.objects.get(id=id)
+    player = Player.objects.get(user=request.user)
+    if not tourney.player1:
+        tourney.player1 = player
+    elif not tourney.player2:
+        tourney.player2 = player
+    elif not tourney.player3:
+        tourney.player3 = player
+    elif not tourney.player4:
+        tourney.player4 = player
+
+    tourney.save()
+    return HttpResponseRedirect('pixelwars/tourney/' + id + '/')
+
+
+def leavetourney(request, id):
+    tourney = Tourney.objects.get(id=id)
+    player = Player.objects.get(user=request.user)
+    if (tourney.player1 and tourney.player1.user == request.user):
+        tourney.player1 = None
+    elif (tourney.player2 and tourney.player2.user == request.user):
+        tourney.player2 = None
+    elif (tourney.player3 and tourney.player3.user == request.user):
+        tourney.player3 = None
+    elif (tourney.player4 and tourney.player4.user == request.user):
+        tourney.player4 = None
+
+    tourney.save()
+    return HttpResponseRedirect('pixelwars/tourney/' + id + '/')
 
 
 def createGame(request):

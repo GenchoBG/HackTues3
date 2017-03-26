@@ -1,11 +1,92 @@
 {% extends 'pixelwars/base.html' %}
 {% block main %}
     <div class="container">
-    <ul>
-        {% for tourney in tourneys %}
-            <li><a href="#">{{ tourney }}</a></li>
-        {% endfor %}
-    </ul>
-
+        <ul>
+            {% for tourney in tourneys %}
+                <li><a href="#">{{ tourney }}</a></li>
+            {% endfor %}
+        </ul>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div style="margin-top: 40px" class="style_chevr chevron">
+                        <div class="style_chevr chevron-inner">
+                            <div style="padding-top: 10px" class="style_chevr chevron-content">
+                                {% if tourney.player1 %}{{ tourney.player1 }}{% else %}???{% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div style="margin-top: 40px" class="style_chevr chevron">
+                        <div class="style_chevr chevron-inner">
+                            <div style="padding-top: 10px" class="style_chevr chevron-content">
+                                {% if tourney.player2 %}{{ tourney.player2 }}{% else %}???{% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div style="margin-top: 40px" class="style_chevr chevron">
+                        <div class="style_chevr chevron-inner">
+                            <div style="padding-top: 10px" class="style_chevr chevron-content">
+                                {% if tourney.player3 %}{{ tourney.player3 }}{% else %}???{% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div style="margin-top: 40px" class="style_chevr chevron">
+                        <div class="style_chevr chevron-inner">
+                            <div style="padding-top: 10px" class="style_chevr chevron-content">
+                                {% if tourney.player4 %}{{ tourney.player4 }}{% else %}???{% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-offset-2 col-md-2">
+                    <div style="margin-top: 100px" class="style_chevr chevron">
+                        <div class="style_chevr chevron-inner">
+                            <div style="padding-top: 10px" class="style_chevr chevron-content">
+                                {% if tourney.player5 %}{{ tourney.player5 }}{% else %}???{% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-offset-4 col-md-2">
+                    <div style="margin-top: 100px" class="style_chevr chevron">
+                        <div class="style_chevr chevron-inner">
+                            <div style="padding-top: 10px" class="style_chevr chevron-content">
+                                {% if tourney.player6 %}{{ tourney.player6 }}{% else %}???{% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-offset-5 col-md-2">
+                    <div style="margin-top: 80px" class="style_chevr chevron">
+                        <div class="style_chevr chevron-inner">
+                            <div style="padding-top: 10px" class="style_chevr chevron-content">
+                                {% if tourney.player7 %}{{ tourney.player7 }}{% else %}???{% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% if canJoin %}
+                    <div style="transform: translate(15px)" class="col-md-offset-4 col-md-4">
+                        <a style="margin-top: 50px" class="btn btn-success btn-lg btn-block"
+                           href="{% url 'pixelwars:jointourney' tourney.id %}" role="button">Join</a>
+                    </div>
+                {% else %}
+                    <div style="transform: translate(15px)" class="col-md-offset-4 col-md-4">
+                        <a style="margin-top: 10px" class="btn btn-warning btn-lg btn-block" href="#"
+                           role="button">Draw</a>
+                    </div>
+                    <div style="transform: translate(15px)" class="col-md-offset-4 col-md-4">
+                        <a style="margin-top: 5px" class="btn btn-danger btn-lg btn-block"
+                           href="{% url 'pixelwars:leavetourney' tourney.id %}" role="button">Leave</a>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
     </div>
 {% endblock %}

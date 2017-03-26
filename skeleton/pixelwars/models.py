@@ -39,6 +39,10 @@ class Tourney(models.Model):
     player2 = models.ForeignKey(Player, null=True, blank=True, related_name="tourneyplayer2")
     player3 = models.ForeignKey(Player, null=True, blank=True, related_name="tourneyplayer3")
     player4 = models.ForeignKey(Player, null=True, blank=True, related_name="tourneyplayer4")
+    player5 = models.ForeignKey(Player, null=True, blank=True, related_name="tourneyplayer5")
+    player6 = models.ForeignKey(Player, null=True, blank=True, related_name="tourneyplayer6")
+    player7 = models.ForeignKey(Player, null=True, blank=True, related_name="tourneyplayer7")
+
 
     def __str__(self):
         return self.theme
