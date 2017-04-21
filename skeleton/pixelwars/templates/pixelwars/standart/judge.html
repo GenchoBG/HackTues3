@@ -3,7 +3,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-5">
-                <img border="3px solid black" class="img" src="{{ drawing1 }}">
+                <img border="3px solid black" class="img" src="{{ drawing1 }} " data-toggle="modal"
+                     data-target="#myModal">
                 <a href="{% url 'pixelwars:vote1' game.id %}" class="btn btn-success">Better</a>
             </div>
             <div class="col-md-1">
@@ -11,8 +12,73 @@
                 <a href="#" class="btn btn-danger disabled"><span style="font-size: 40px">VS</span></a>
             </div>
             <div class="col-md-5">
-                <img border="3px solid black" class="img" src="{{ drawing2 }}">
+                <img border="3px solid black" class="img" src="{{ drawing2 }}" data-toggle="modal"
+                     data-target="#myModal2">
                 <a href="{% url 'pixelwars:vote2' game.id %}" class="btn btn-success pull-right">Better</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 style="float:left" class="modal-title" id="myModalLabel">Download</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="form-horizontal">
+                            <div class="form-group">
+                                <img style="width: 400px; margin-left: 100px" class="col-md-2" src="{{ drawing2 }}">
+                            </div>
+                            <div class="form-group">
+                                <a href="{{ drawing2 }}" download="Drawing">
+                                    <button style="width: 350px; margin-left: 125px" class="btn btn-success col-md-3">
+                                        Download
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="modal-footer">
+                                <button id="close_registration" type="button" class="btn btn-default"
+                                        data-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 style="float:left" class="modal-title" id="myModalLabel">Download</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="form-horizontal">
+                            <div class="form-group">
+                                <img style="width: 400px; margin-left: 100px" class="col-md-2" src="{{ drawing1 }}">
+                            </div>
+                            <div class="form-group">
+                                <a href="{{ drawing1 }}" download="Drawing">
+                                    <button style="width: 350px; margin-left: 125px" type="button"
+                                            class="btn btn-success col-md-3">Download
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="modal-footer">
+                                <button id="close_registration" type="button" class="btn btn-default"
+                                        data-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

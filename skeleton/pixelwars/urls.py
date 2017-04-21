@@ -64,5 +64,8 @@ urlpatterns = [
 
     # /pixelwars/standart/<id>/judge/2/
     url(r'standart/(?P<id>\d+)/judge/2/', views.vote2, name='vote2'),
+
+    # /pixelwars/images/
+    url(r'images/', views.viewImages, name='images'),
     ]
 

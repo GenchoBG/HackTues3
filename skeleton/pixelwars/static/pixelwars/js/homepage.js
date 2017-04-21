@@ -57,7 +57,7 @@ $(document).ready(function() {
         }
     });
 
-    var timeuntil = moment().hour(20).minute(0).second(0).diff(moment(), 'seconds');
+    var timeuntil = moment().hour(22).minute(0).second(0).diff(moment(), 'seconds');
 
     clock.setTime(timeuntil);
     clock.setCountdown(true);

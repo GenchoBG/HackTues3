@@ -15,8 +15,14 @@ from django.contrib.auth import authenticate, login, logout
 
 def standart(request):
     judgeGames = Game.objects.filter(active=True).filter(judgable=True).all()
+    judgeGamesActually = []
+    if(request.user):
+        for game in judgeGames:
+            if game.player1.user != request.user and game.player2.user != request.user:
+                judgeGamesActually.append(game)
+
     games = Game.objects.filter(active=True).filter(judgable=False).all()
-    context = {'games': games, 'judgeGames': judgeGames}
+    context = {'games': games, 'judgeGames': judgeGamesActually}
     return render(request, 'pixelwars/standart/index.html', context)
 
 
@@ -276,3 +282,7 @@ def vote2(request, id):
     return HttpResponseRedirect('/')
 
     # LIST judge views
+
+def viewImages(request):
+    games = Game.objects.filter(active=False)
+    return render(request, 'pixelwars/images.html', {"games": games})
