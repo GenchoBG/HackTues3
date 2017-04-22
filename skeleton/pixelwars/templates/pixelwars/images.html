@@ -1,0 +1,25 @@
+{% extends 'pixelwars/base.html' %}
+{% block main %}
+<div class="container">
+    <div class="row">
+        {% for game in games %}
+            <div class="col-md-3">
+            <a href="{{ game.drawing1 }}" download="drawing{{ game.player1.name }}">
+                <img style="margin-left: 15px; border-radius: 10%; border: 2px double black; width: 200px"
+                     src="{{ game.drawing1 }}"
+                     alt="pic">
+            </a>
+                <h5 style="text-align: center">{{ game.player1.name }}</h5>
+            </div>
+            <div class="col-md-3">
+            <a href="{{ game.drawing2 }}" download="drawing{{ game.player2.name }}">
+                 <img style="margin-left: 15px; border-radius: 10%; border: 2px double black; width: 200px"
+                     src="{{ game.drawing2 }}"
+                     alt="pic">
+            </a>
+                <h5 style="text-align: center">{{ game.player2.name }}</h5>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
